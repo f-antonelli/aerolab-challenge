@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HoverWrapper = styled.div`
   opacity: 0;
@@ -15,7 +15,7 @@ export const HoverWrapper = styled.div`
   background: var(--hoverprods);
   box-shadow: 20px 15px 47px -16px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
-`;
+`
 
 export const Card = styled.div`
   cursor: pointer;
@@ -32,17 +32,17 @@ export const Card = styled.div`
       opacity: 1 !important;
     }
   }
-`;
+`
 
 export const ContainerImg = styled.div`
   flex: 0.7;
-`;
+`
 
 export const ProductImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`;
+`
 
 export const ContainerText = styled.div`
   flex: 0.3;
@@ -50,35 +50,35 @@ export const ContainerText = styled.div`
   flex-direction: column;
   padding: 1rem 0;
   border-top: 3px solid var(--background);
-`;
+`
 
 export const Category = styled.p`
   color: var(--category);
-`;
+`
 
 export const Name = styled.h4`
   font-size: 1.1rem;
   color: var(--secondary);
-`;
+`
 
 //  Hover Items
 export const ContainerPoints = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
-`;
+`
 
 export const Points = styled.p`
   font-size: 2.3rem;
   color: #ffffff;
-`;
+`
 
 export const Coin = styled.img`
   width: 2.1rem;
   height: auto;
   margin-left: 0.4rem;
   padding-top: 0.4rem;
-`;
+`
 
 export const ButtonRedeem = styled.button`
   cursor: pointer;
@@ -95,4 +95,4 @@ export const ButtonRedeem = styled.button`
   :hover {
     background-color: var(--background);
   }
-`;
+`

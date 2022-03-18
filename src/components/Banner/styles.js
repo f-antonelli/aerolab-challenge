@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import BannerSrc from "assets/header-x1.png";
+import styled from 'styled-components'
+import BannerSrc from 'assets/header-x1.png'
 
 export const WrapperBanner = styled.div`
   position: relative;
   width: 100%;
   height: 27rem;
-`;
+`
 
 export const BannerImg = styled.div`
   background-image: url(${BannerSrc});
@@ -14,7 +14,7 @@ export const BannerImg = styled.div`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`;
+`
 
 export const Title = styled.h1`
   z-index: 10;
@@ -27,4 +27,4 @@ export const Title = styled.h1`
   @media (max-width: 970px) {
     display: none;
   }
-`;
+`

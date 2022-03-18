@@ -1,4 +1,5 @@
-import { useProducts } from "hooks/useProducts";
+import { useProducts } from 'hooks/useProducts'
+
 import {
   BtnSort,
   ContainerSort,
@@ -7,16 +8,10 @@ import {
   BtnPrev,
   BtnNext,
   WrapperButtons,
-} from "./styles";
+} from './styles'
 
 const Sort = () => {
-  const {
-    sortByLowest,
-    sortByHighest,
-    showfirstPage,
-    showSecondPage,
-    cantProds,
-  } = useProducts();
+  const { sortByLowest, sortByHighest, showfirstPage, showSecondPage, cantProds } = useProducts()
 
   return (
     <ContainerSort>
@@ -26,17 +21,11 @@ const Sort = () => {
       <BtnSort onClick={sortByLowest}>Lowest price</BtnSort>
       <BtnSort onClick={sortByHighest}>Highest price</BtnSort>
       <WrapperButtons>
-        <BtnPrev
-          onClick={showfirstPage}
-          display={cantProds === 16 ? "none" : "block"}
-        />
-        <BtnNext
-          onClick={showSecondPage}
-          display={cantProds === 32 ? "none" : "block"}
-        />
+        <BtnPrev display={cantProds === 16 ? 'none' : 'block'} onClick={showfirstPage} />
+        <BtnNext display={cantProds === 32 ? 'none' : 'block'} onClick={showSecondPage} />
       </WrapperButtons>
     </ContainerSort>
-  );
-};
+  )
+}
 
-export default Sort;
+export default Sort

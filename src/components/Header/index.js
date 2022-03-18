@@ -1,15 +1,7 @@
-//  images
-import LogoSrc from "assets/aerolab-logo.svg";
-import CoinSrc from "assets/icons/coin.svg";
-//  styles
-import {
-  BoxPoints,
-  CoinIcon,
-  ContainerUser,
-  Logo,
-  TextHeader,
-  WrapperHeader,
-} from "./styles";
+import LogoSrc from 'assets/aerolab-logo.svg'
+import CoinSrc from 'assets/icons/coin.svg'
+
+import { BoxPoints, CoinIcon, ContainerUser, Logo, TextHeader, WrapperHeader } from './styles'
 
 const Header = () => {
   return (
@@ -23,7 +15,7 @@ const Header = () => {
         </BoxPoints>
       </ContainerUser>
     </WrapperHeader>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,5 +1,4 @@
-//  styles
-import { BannerImg, Title, WrapperBanner } from "./styles";
+import { BannerImg, Title, WrapperBanner } from './styles'
 
 const Banner = () => {
   return (
@@ -7,7 +6,7 @@ const Banner = () => {
       <BannerImg />
       <Title>Electronics</Title>
     </WrapperBanner>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner

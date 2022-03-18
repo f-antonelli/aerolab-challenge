@@ -1,4 +1,5 @@
 import CoinSrc from 'assets/icons/coin.svg'
+
 import {
   ButtonRedeem,
   Card,
@@ -11,7 +12,7 @@ import {
   Name,
   Points,
   ProductImg,
-} from "./styles";
+} from './styles'
 
 const Product = ({ id, name, cost, img, category }) => {
   return (
@@ -32,7 +33,7 @@ const Product = ({ id, name, cost, img, category }) => {
         <ButtonRedeem>Redeem now</ButtonRedeem>
       </HoverWrapper>
     </Card>
-  );
-};
+  )
+}
 
-export default Product;
+export default Product
