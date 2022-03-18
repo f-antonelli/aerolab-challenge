@@ -1,24 +1,11 @@
-import Banner from "components/Banner";
-import Header from "components/Header";
-import ProductList from "components/ProductsList";
-import { useEffect, useState } from "react";
-import getProducts from "services/getProducts";
+import { ProductsProvider } from "context/ProductsContext";
+import Home from "pages/Home";
 
 function App() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    getProducts().then((products) => {
-      setProducts(products);
-    });
-  }, [setProducts]);
-
   return (
-    <>
-      <Header />
-      <Banner />
-      <ProductList products={products} />
-    </>
+    <ProductsProvider>
+      <Home />
+    </ProductsProvider>
   );
 }
 
