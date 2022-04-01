@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
 export const WrapperHeader = styled.div`
+  z-index: 999999999;
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 5rem;
   padding: 0 2.6rem;
+  background-color: #fff;
 `
 
 export const Logo = styled.img`
@@ -27,7 +32,7 @@ export const TextHeader = styled.h2`
 
 export const BoxPoints = styled.div`
   display: flex;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   background: var(--bgtext);
   border-radius: 6.25rem;
   margin-left: 1rem;
@@ -35,5 +40,5 @@ export const BoxPoints = styled.div`
 export const CoinIcon = styled.img`
   width: 1.5rem;
   height: auto;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 `

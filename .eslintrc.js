@@ -19,7 +19,7 @@ module.exports = {
   plugins: ['react', 'prettier', 'import', 'react-hooks'],
   rules: {
     'react/prop-types': 'off',
-    'no-console': 'warn',
+    // 'no-console': 'warn',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': [

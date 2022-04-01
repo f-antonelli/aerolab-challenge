@@ -1,11 +1,14 @@
 import { ProductsProvider } from 'context/ProductsContext'
+import { UserProvider } from 'context/UserContext'
 import Home from 'pages/Home'
 
 function App() {
   return (
-    <ProductsProvider>
-      <Home />
-    </ProductsProvider>
+    <UserProvider>
+      <ProductsProvider>
+        <Home />
+      </ProductsProvider>
+    </UserProvider>
   )
 }
 

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import ShopBlueSrc from 'assets/icons/buy-blue.svg'
+import ShopWhiteSrc from 'assets/icons/buy-white.svg'
 
 export const HoverWrapper = styled.div`
   opacity: 0;
@@ -17,6 +19,34 @@ export const HoverWrapper = styled.div`
   transition: all 0.5s ease-in-out;
 `
 
+export const WrapperLowPoins = styled.div`
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(97, 97, 97, 0.7);
+  border-radius: 5rem;
+  padding: 0.5rem;
+`
+
+export const LowPoints = styled.p`
+  z-index: 100;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+`
+
+export const Shop = styled.div`
+  z-index: 100;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: url(${ShopBlueSrc});
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+`
 export const Card = styled.div`
   cursor: pointer;
   position: relative;
@@ -30,6 +60,10 @@ export const Card = styled.div`
   :hover {
     ${HoverWrapper} {
       opacity: 1 !important;
+    }
+    ${Shop} {
+      background: url(${ShopWhiteSrc}) no-repeat !important;
+      background-size: contain !important;
     }
   }
 `
@@ -74,10 +108,10 @@ export const Points = styled.p`
 `
 
 export const Coin = styled.img`
-  width: 2.1rem;
+  width: ${(props) => props.width};
   height: auto;
   margin-left: 0.4rem;
-  padding-top: 0.4rem;
+  padding-top: ${(props) => props.padding};
 `
 
 export const ButtonRedeem = styled.button`

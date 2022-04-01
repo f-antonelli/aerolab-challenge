@@ -2,14 +2,14 @@ import axios from 'axios'
 
 import { API_URL, HEADERS } from './settings'
 
-const fromApiResponseToProducts = (apiResponse) => {
+const fromApiResponseToHistory = (apiResponse) => {
   const { data = [] } = apiResponse
 
   return data
 }
 
-const getProducts = () => {
-  const apiURL = `${API_URL}/products`
+const getHistory = () => {
+  const apiURL = `${API_URL}/user/history`
 
   return axios
     .get(apiURL, {
@@ -18,7 +18,7 @@ const getProducts = () => {
     .catch(function (error) {
       console.log(error)
     })
-    .then(fromApiResponseToProducts)
+    .then(fromApiResponseToHistory)
 }
 
-export default getProducts
+export default getHistory
