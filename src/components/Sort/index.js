@@ -8,6 +8,7 @@ import {
   BtnPrev,
   BtnNext,
   WrapperButtons,
+  BoxSorts,
 } from './styles'
 
 const Sort = () => {
@@ -15,11 +16,13 @@ const Sort = () => {
 
   return (
     <ContainerSort>
-      <CantProds>{cantProds} of 32 products</CantProds>
-      <Title>Sort By:</Title>
-      <BtnSort>Most recent</BtnSort>
-      <BtnSort onClick={sortByLowest}>Lowest price</BtnSort>
-      <BtnSort onClick={sortByHighest}>Highest price</BtnSort>
+      <BoxSorts>
+        <CantProds>{cantProds} of 32 products</CantProds>
+        <Title>Sort By:</Title>
+        <BtnSort>Most recent</BtnSort>
+        <BtnSort onClick={sortByLowest}>Lowest price</BtnSort>
+        <BtnSort onClick={sortByHighest}>Highest price</BtnSort>
+      </BoxSorts>
       <WrapperButtons>
         <BtnPrev display={cantProds === 16 ? 'none' : 'block'} onClick={showfirstPage} />
         <BtnNext display={cantProds === 32 ? 'none' : 'block'} onClick={showSecondPage} />

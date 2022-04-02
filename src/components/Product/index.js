@@ -19,6 +19,10 @@ import {
 } from './styles'
 
 const Product = ({ id, name, cost, img, category, needPoints, canBuy }) => {
+  const sendReedem = (id) => {
+    postRedeemProduct(id)
+  }
+
   return (
     <Card>
       <ContainerImg>
@@ -36,7 +40,7 @@ const Product = ({ id, name, cost, img, category, needPoints, canBuy }) => {
               <Points>{cost}</Points>
               <Coin padding="0.4rem" src={CoinSrc} width="2.1rem" />
             </ContainerPoints>
-            <ButtonRedeem onClick={() => postRedeemProduct(id)}>Redeem now</ButtonRedeem>
+            <ButtonRedeem onClick={() => sendReedem(id)}>Redeem now</ButtonRedeem>
           </HoverWrapper>
         </>
       ) : (

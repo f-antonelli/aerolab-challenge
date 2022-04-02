@@ -10,6 +10,7 @@ const useUser = () => {
       setUser(user)
     })
   }, [setUser])
+  console.log(user)
 
   return { user, setUser }
 }

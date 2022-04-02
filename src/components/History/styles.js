@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { keyframes } from 'styled-components'
 
 export const Cart = styled.img`
   cursor: pointer;
@@ -23,7 +22,6 @@ export const WrapperHistory = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  animation: ${(props) => props.animation} 2s all;
 `
 export const ModalHistory = styled.div`
   z-index: 5000;
@@ -32,9 +30,11 @@ export const ModalHistory = styled.div`
   right: ${(props) => props.right};
   background-color: #ffffff;
   width: 30%;
+  min-width: 400px;
   height: 100vh;
   padding-top: 2.5rem;
   transition: all 2s;
+  overflow-y: scroll;
 `
 export const Title = styled.h2`
   font-size: 2rem;
@@ -68,13 +68,3 @@ export const Name = styled.h3`
 export const Cost = styled.span`
   font-size: 1rem;
 `
-
-const opa = keyframes`
-from {
-  opacity 0;
-}
-  to {
-    opacity: 1;
-  }
-
-  `

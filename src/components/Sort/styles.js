@@ -5,6 +5,7 @@ import arrownext from 'assets/icons/arrow-right.svg'
 export const ContainerSort = styled.div`
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: 2rem 8rem;
@@ -36,7 +37,7 @@ export const BtnSort = styled.button`
   border-radius: 4rem;
   background-color: var(--bgtext);
   color: var(--category);
-  margin: 0 0.6rem;
+  margin: 0 0.6rem 0.5rem 0.6rem;
   :focus,
   :hover {
     background-color: var(--primary);
@@ -45,10 +46,17 @@ export const BtnSort = styled.button`
 `
 
 export const WrapperButtons = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
+  @media (max-width: 550px) {
+    padding-left: 5.5rem;
+  }
+`
+
+export const BoxSorts = styled.div`
   display: flex;
+  @media (max-width: 1155px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const BtnPrev = styled.div`

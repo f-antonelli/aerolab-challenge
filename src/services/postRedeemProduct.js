@@ -1,9 +1,12 @@
 import axios from 'axios'
+import toast from 'react-hot-toast'
 
 import { API_URL, HEADERS } from './settings'
 
 const fromApiResponseToRedeem = (apiResponse) => {
-  console.log(apiResponse)
+  const { data = [] } = apiResponse
+
+  return toast.success(data.message)
 }
 
 const postRedeemProduct = (productId) => {

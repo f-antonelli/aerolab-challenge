@@ -24,9 +24,9 @@ const History = () => {
     <>
       <Cart src={CartSrc} onClick={openModal} />
       {isOpen && (
-        <WrapperHistory animation={isOpen ? 'opa' : 'none'} onClick={closeModal}>
-          <Close src={CloseSrc} onClick={closeModal} />
+        <WrapperHistory onClick={closeModal}>
           <ModalHistory right={isOpen ? '0' : '30%'} onClick={stopProp}>
+            <Close src={CloseSrc} onClick={closeModal} />
             <Title>Reedem History</Title>
             <ContainerProduct>
               {history.map((product, index) => (
